@@ -1,7 +1,7 @@
-from calc_function import do_addition,do_subtraction
+from calc_function import do_addition,do_subtraction,do_division
 from multi import do_multiplication
 def main():
-    user_input=input("please select your choice:\n 1.add \n 2.subtract \n 3.multiplication")
+    user_input=input("please select your choice:\n 1.add \n 2.subtract \n 3.multiplication\n 4.Division")
 
     a=int(input("first number: "))
     b=int(input("second number: "))
@@ -12,6 +12,8 @@ def main():
         result=do_subtraction(a,b)
     elif user_input=="3":
         result=do_multiplication(a,b)
+    elif user_input=="4":
+        result=do_division(a,b)
     return result
 
 if __name__=="__main__":
