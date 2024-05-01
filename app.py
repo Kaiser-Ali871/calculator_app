@@ -1,5 +1,6 @@
 from calc_function import do_addition,do_subtraction,do_division
 from multi import do_multiplication
+from area import area_triangle
 def main():
     user_input=input("please select your choice:\n 1.add \n 2.subtract \n 3.multiplication\n 4.Division")
 
